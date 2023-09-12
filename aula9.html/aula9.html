@@ -2,9 +2,24 @@
 <html>
 
 <head>
+
     <style>
+            @media (min-width: 800px) {
+            .coluna {
+                width: 50%
+            }
+}
+            @media (min-width: 1000px) {
+            .coluna {
+                width: 33.3%
+            }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         header {
-            background-color: #ff0000;
+            background-color: #000000;
             text-align: center;
             padding: 10px;
         }
@@ -20,11 +35,28 @@
         }
 
         nav ul li a {
-            color: gray;
+            color: rgb(255, 253, 253);
             text-decoration: none;
         }
 
-    
+        .container {
+            display: flex;
+            text-align: center;
+        }
+
+        .lado-a-lado {
+            flex: 1;
+            border: 2px solid #000000;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 20px;
+        }
+
+        .seila {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -34,13 +66,57 @@
         <nav>
             <ul>
                 <li> <a href="https://legadodamarvel.com.br/tag/homem-de-ferro/">home</a></li>
-                <li> <a href="https://segredosdomundo.r7.com/homem-de-ferro-historia/"></a>pagina 1</li>
-                <li> <a href="https://www.adorocinema.com/filmes/filme-53751/"></a>pagina 2</li>
-                <li> <a href="https://www.youtube.com/watch?v=V1JXMxczhTc"></a>pagina 3</li>
+                <li> <a href="https://segredosdomundo.r7.com/homem-de-ferro-historia/">pagina 1</a></li>
+                <li> <a href="https://www.adorocinema.com/filmes/filme-53751/">pagina 2</a></li>
+                <li> <a href="https://www.youtube.com/watch?v=V1JXMxczhTc">pagina 3</a></li>
             </ul>
         </nav>
 
     </header>
+    <div class="container">
+        <div class="lado-a-lado">
+
+            <h3>Origem:</h3>
+
+            <p><b>O Homem de Ferro chegou ao cinema em 2008 como <br>
+                    um personagem menos conhecido da Marvel. A escolha de
+                    Robert Downey Jr. como Tony Stark foi arriscada, <br>
+                    mas foi um sucesso. O filme lançou o Universo
+                    Cinematográfico Marvel (MCU) e o tornou um ícone <br>
+                    dos super-heróis no cinema.</b></p>
+        </div>
+
+        <div class="lado-a-lado">
+            <h3>filmes que mais fizeram sucesso:</h3>
+            <p><b>Os filmes do Homem de Ferro que mais fizeram <br>
+                    sucesso são o original de 2008, "Homem de Ferro," e <br>
+                    suas
+                    aparições nos filmes dos Vingadores, como br
+                    "Os Vingadores" (2012), "Vingadores: A Era de Ultron" (2015),
+                    e "Vingadores: Ultimato" (2019). Eles contribuíram para o grande sucesso do personagem.</b></p>
+        </div>
+        <div class="lado-a-lado">
+            <h3>ultimo filme do homem de ferro:</h3>
+            <p><b>O último filme do Homem de Ferro, interpretado por Robert Downey Jr., foi "Vingadores: Ultimato",
+                    lançado
+                    em 2019. Não tenho informações sobre eventos ou filmes lançados após setembro de 2021. Para
+                    informações
+                    mais recentes, consulte fontes atualizadas.</b></p>
+        </div>
+        <div class="lado-a-lado">
+            <h3>ultimas aparições do homem de ferro:</h3>
+            <p><b>As últimas aparições de Homem de Ferro (Tony Stark) no Universo Cinematográfico Marvel (MCU) foram em
+                    "Vingadores: Ultimato" (2019) e houve uma referência à sua tecnologia em "Homem-Aranha: Longe de
+                    Casa" (2019). Robert Downey Jr.</b></p>
+        </div>
+    </div>
+    <footer>
+        <div class="seila">
+            <h4>ultimas palavras do homem de ferro:</h4>
+            <p><b>Eu sou o homem de ferro!</b></p>
+        </div>
+
 </body>
+</footer>
 
 </html>
