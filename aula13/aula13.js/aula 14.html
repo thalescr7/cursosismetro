@@ -17,7 +17,7 @@
             /* Para cobrir a altura da janela */
             margin: 0;
             /* Remova margens padrão do corpo */
-            
+
         }
 
         h1 {
@@ -41,23 +41,23 @@
             <div class="row">
                 <div class="col-3">
                     <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="button" >C</button>
-                        <button class="btn btn-primary" type="button" >MR</button>
-                        <button class="btn btn-primary" type="button" >MC</button>
-                        <button class="btn btn-primary" type="button" >M+</button>
-                        <button class="btn btn-primary" type="button" >M-</button>
+                        <button class="btn btn-primary" type="button" onclick=" apagar() ">C</button>
+                        <button class="btn btn-primary" type="button" onclick=" most_memo()">MR</button>
+                        <button class="btn btn-primary" type="button" onclick=" apag_memoria()">MC</button>
+                        <button class="btn btn-primary" type="button" onclick=" add_num()">M+</button>
+                        <button class="btn btn-primary" type="button" onclick=" subt_num()">M-</button>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="row">
                         <div class="col-8">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button"  onclick="apagar() ">&lt;X</button>
+                                <button class="btn btn-primary" type="button" onclick="apagar_x()">&lt;X</button>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button" onclick=" ">%</button>
+                                <button class="btn btn-primary" type="button" onclick="porcentagem()">%</button>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">.</button>
+                                <button class="btn btn-primary" type="button" onclick="adicionar_ponto()">.</button>
                             </div>
                         </div>
                     </div>
@@ -100,10 +100,10 @@
                 <div class="col-3">
                     <div class="d-grid gap-2">
                         <button class="btn btn-primary" type="button" onclick="efetuar_soma()">+</button>
-                        <button class="btn btn-primary" type="button">*</button>
-                        <button class="btn btn-primary" type="button">-</button>
-                        <button class="btn btn-primary" type="button">/</button>
-                        <button class="btn btn-primary" type="button"onclick= "resultado()">=</button>
+                        <button class="btn btn-primary" type="button" onclick="efetuar_multiplicacao()">*</button>
+                        <button class="btn btn-primary" type="button" onclick="efetuar_subtracao()">-</button>
+                        <button class="btn btn-primary" type="button" onclick="efetuar_divisao()">/</button>
+                        <button class="btn btn-primary" type="button" onclick="resultado()">=</button>
                     </div>
                 </div>
 
